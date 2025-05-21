@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --mentai-blue: 0, 149, 255;
+  --mentai-purple: 255, 0, 255;
+  --mentai-green: 16, 185, 129;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.bg-gradient-mentai {
+  background: linear-gradient(45deg, #00ffff, #ff00ff, #10b981);
+}
+
+.text-gradient-mentai {
+  background: linear-gradient(45deg, #00ffff, #ff00ff, #10b981);
+  -webkit-background-clip: text;
+  color: transparent;
+}
