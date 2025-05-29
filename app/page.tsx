@@ -14,7 +14,6 @@ import FinalCTASection from './components/FinalCTASection'
 import Footer from './components/Footer'
 import Cadastro from './components/Cadastro'
 import QualificationForm from './components/QualificationForm'
-import Navigation from './components/Navigation'; // Import the Navigation component
 
 export default function Home() {
   const [showCadastro, setShowCadastro] = useState(false)
@@ -41,7 +40,6 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col bg-black">
-      <Navigation onLogoClick={onLogoClick} /> {/* Updated Navigation */}
       <HeroSection openCadastro={() => handleButtonClick('cadastro')} />
       <PainSolution openCadastro={() => handleButtonClick('pain')} />
       <Results openCadastro={() => handleButtonClick('results')} />
@@ -58,4 +56,3 @@ export default function Home() {
       <QualificationForm isOpen={showQualificationForm} onClose={closeQualificationForm} />
     </main>
   )
-}

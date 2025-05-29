@@ -6,7 +6,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 
 interface NavigationProps {
-  onLogoClick: () => void;
+  onLogoClick?: () => void;
 }
 
 export default function Navigation({ onLogoClick }: NavigationProps) {
@@ -24,7 +24,7 @@ export default function Navigation({ onLogoClick }: NavigationProps) {
 
   const handleLogoClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    onLogoClick();
+    onLogoClick?.();
     router.push('/');
   };
 
