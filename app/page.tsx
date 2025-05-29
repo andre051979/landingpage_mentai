@@ -56,3 +56,4 @@ export default function Home() {
       <QualificationForm isOpen={showQualificationForm} onClose={closeQualificationForm} />
     </main>
   )
+}
