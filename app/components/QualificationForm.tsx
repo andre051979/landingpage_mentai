@@ -94,7 +94,7 @@ export default function QualificationForm({ isOpen, onClose }: QualificationForm
         "Dificuldade em escalar operações sem aumentar custos",
         "Processos manuais que consomem tempo da equipe",
       ],
-     Construção Civil: [
+     Imobiliario: [
         "Inconsistência na qualidade do atendimento",
         "Dificuldade em escalar operações sem aumentar custos",
         "Processos manuais que consomem tempo da equipe",
