@@ -265,7 +265,7 @@ export default function QualificationForm({ isOpen, onClose }: QualificationForm
       }, 1500)
 
       // Tentativa de envio real (em segundo plano)
-      fetch("https://mentai-automacao-n8n.yzgabq.easypanel.host/webhook-test/mentai-analysis", {
+      fetch("https://mentai-automacao-n8n.yzgabq.easypanel.host/webhook/mentai-analysis", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
